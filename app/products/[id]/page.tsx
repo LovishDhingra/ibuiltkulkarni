@@ -8,7 +8,7 @@ export default async  function Product({
    
     return(
         <div>
-            <h1>Product Page  check id{id} </h1>
+            <h1>Product Page   id{id} </h1>
         </div>
     )
 } 
