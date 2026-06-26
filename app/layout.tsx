@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
-import { Urbanist, Geist_Mono } from "next/font/google";
+import { Urbanist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils";
+
+const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
 const urbanist = Urbanist({
   subsets: ['latin'],
@@ -14,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "I built kulkarni",
-  description: "this is the my next js learning project",
+  description: "this is the mtrtrtry next js learning project",
 };
 
 export default function RootLayout({
@@ -25,7 +28,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${urbanist.variable} ${geistMono.variable} h-full antialiased`}
+      className={cn("h-full", "antialiased", urbanist.variable, geistMono.variable, "font-sans", inter.variable)}
     >
       <body className={`${urbanist.variable} min-h-full flex flex-col`}>
         <header className={`${urbanist.variable} bg-gray-100 p-4`}>
