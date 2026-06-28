@@ -1,19 +1,10 @@
 import type { Metadata } from "next";
-import { Urbanist, Geist_Mono, Inter } from "next/font/google";
+import { Outfit } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 
-const inter = Inter({subsets:['latin'],variable:'--font-sans'});
+const outfit = Outfit({subsets:['latin'],variable:'--font-sans'});
 
-const urbanist = Urbanist({
-  subsets: ['latin'],
-  variable: '--font-urbanist',
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "I built kulkarni",
@@ -27,18 +18,17 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
-      className={cn("h-full", "antialiased", urbanist.variable, geistMono.variable, "font-sans", inter.variable)}
-    >
-      <body className={`${urbanist.variable} min-h-full flex flex-col`}>
-        <header className={`${urbanist.variable} bg-gray-100 p-4`}>
-        header
+      lang="en">
+      <body className={`${outfit.variable} min-h-full flex flex-col`}>
+        <header>
+        iBuiltThis
         </header>
+        {children}
         
-        <main className="flex-1">{children}</main>
+       
         
-        <footer className={`${urbanist.variable} bg-gray-100 p-4`}>
-       footer
+        <footer>
+          IbuiltThis &copy; 2026. All rights reserved.
         </footer>
       </body>
     </html>
