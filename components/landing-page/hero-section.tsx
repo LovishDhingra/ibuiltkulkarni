@@ -57,7 +57,7 @@ export default function HeroSection() {
             Share What You&apos;ve Built, Discover What&apos;s Launching
           </h1>
           <p className="text-lg sm:text-xl text-muted-foreground mb-10 max-w-2xl leading-relaxed">
-            A community platform for creators to showcase their apps, AI tools,
+            A community ffffplatform for creators to showcase their apps, AI tools,
             SaaS products, and creative projects. Authentic launches, real
             builders, genuine feedback.
           </p>
